@@ -8,13 +8,13 @@ import Typography from '@mui/material/Typography';
 import { ArrowDown as ArrowDownIcon } from '@phosphor-icons/react/dist/ssr/ArrowDown';
 import { ArrowUp as ArrowUpIcon } from '@phosphor-icons/react/dist/ssr/ArrowUp';
 import { Users as UsersIcon } from '@phosphor-icons/react/dist/ssr/Users';
-import { startCase } from 'lodash';
+import startCase from 'lodash/startCase';
 
 export interface TotalCustomersProps {
   diff?: number;
   trend: 'up' | 'down';
   sx?: SxProps;
-  data: Record<string, number>;
+  data: Record<string, number | undefined>;
 }
 
 export function StuckApplicants({ diff, trend, sx, data }: TotalCustomersProps): React.JSX.Element {

@@ -8,7 +8,7 @@ import { TimeToHireTrends } from '@/app/openings/(components)/sales';
 import { Sources } from '@/app/openings/(components)/sources';
 import { Chip } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
-import { startCase } from 'lodash';
+import startCase from 'lodash/startCase';
 
 import { SalaryRange } from '../(components)/budget';
 import { RejectionReasons } from '../(components)/rejection-reasons';

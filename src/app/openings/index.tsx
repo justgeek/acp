@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { useRouter } from 'next/navigation';
 import { routes } from '@/app/routes';
-import { Chip } from '@mui/material';
+import { Chip, ChipOwnProps } from '@mui/material';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -81,7 +81,7 @@ export function Openings({ openings = [], sx }: OpeningsProps): React.JSX.Elemen
                   <TableCell>{applicationDeadline}</TableCell>
                   <TableCell>{salaryRange}</TableCell>
                   <TableCell>
-                    <Chip sx={{ width: 100 }} color={color} label={label} size="medium" />
+                    <Chip sx={{ width: 100 }} color={color as ChipOwnProps['color']} label={label} size="medium" />
                   </TableCell>
                 </TableRow>
               );
