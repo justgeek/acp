@@ -7,9 +7,10 @@ I have used Chat GPT to generate some dummy date for Job openings and their deta
 
 The prototype idea is simple. A 2 pages application, one for listing all openings created by the client, and a page that shows details and insights about the opening (which is our main concern)
 
-For sake of simplicits I avoided adding all CRUD funtionalities, our user is not able to create, update, or close an opening.
+For sake of simplicity I avoided adding all CRUD funtionalities, our user is not able to create, update, or close an opening.
 
 
 ## Getting Started
 
 - install dependecies using `npm i`
+- run the app using `npm run dev`
